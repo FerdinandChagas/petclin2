@@ -1,4 +1,4 @@
-from datetime import datetime as dt
+from datetime import datetime
 from django.test import TestCase
 from rest_framework.test import APIClient, APITestCase
 
@@ -15,7 +15,7 @@ class TestUsuarioViewSet(APITestCase):
             email = 'dummy@ufersa.edu.br',
             cpf = '41234241241234',
             endereco = 'Rua Portugal, 287',
-            data_cadastro = dt.today(),
+            data_cadastro = datetime.today(),
         )
         self.user.save()
     
