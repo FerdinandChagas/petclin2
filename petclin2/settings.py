@@ -124,3 +124,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+DJANGO_SETTINGS_MODULE = 'petclin2.settings.py'
+
+REST_FRAMEWORK = {
+    "DJANGO_SETTINGS_MODULE": "petclin2.settings.py"
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
+}
