@@ -7,6 +7,6 @@ from agendamento.models import Usuario
 class UsuarioViewSet(ModelViewSet):
 
     serializer_class = UsuarioSerializer
-    permissions_class = [ AllowAny ]
+    permissions_class = [ AllowAny | IsAuthenticated]
     queryset = Usuario.objects.all()
 
