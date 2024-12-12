@@ -9,3 +9,7 @@ class Usuario(models.Model):
     cpf = models.CharField(max_length=14)
     endereco = models.CharField(max_length=200)
     data_cadastro = models.DateField()
+
+    class Meta:
+        verbose_name = "Usuário"
+        verbose_name_plural = "Usuários"
